@@ -1002,10 +1002,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     vendor/motorola/athene/proprietary/vendor/lib/libStDrvInt.so:system/vendor/lib/libStDrvInt.so \
     vendor/motorola/athene/proprietary/vendor/lib/libstlport_sta.so:system/vendor/lib/libstlport_sta.so \
-    vendor/motorola/athene/proprietary/vendor/lib/libsu.so:system/vendor/lib/libsu.so \
     vendor/motorola/athene/proprietary/vendor/lib/libsubsystem_control.so:system/vendor/lib/libsubsystem_control.so \
     vendor/motorola/athene/proprietary/vendor/lib/libSubSystemShutdown.so:system/vendor/lib/libSubSystemShutdown.so \
-    vendor/motorola/athene/proprietary/vendor/lib/libsui.so:system/vendor/lib/libsui.so \
     vendor/motorola/athene/proprietary/vendor/lib/libsurround_3mic_proc.so:system/vendor/lib/libsurround_3mic_proc.so \
     vendor/motorola/athene/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/motorola/athene/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
