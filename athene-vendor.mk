@@ -192,6 +192,8 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/lib/soundfx/libspeakerbundle.so:system/lib/soundfx/libspeakerbundle.so \
     vendor/motorola/athene/proprietary/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
     vendor/motorola/athene/proprietary/lib/android.hardware.biometrics.fingerprint@2.1.so:system/lib/android.hardware.biometrics.fingerprint@2.1.so \
+    vendor/motorola/athene/proprietary/lib/libaptX_encoder.so:system/lib/libaptX_encoder.so \
+    vendor/motorola/athene/proprietary/lib/libaptXHD_encoder.so:system/lib/libaptXHD_encoder.so \
     vendor/motorola/athene/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
     vendor/motorola/athene/proprietary/lib/libadvalgcore.so:system/lib/libadvalgcore.so \
     vendor/motorola/athene/proprietary/lib/libbabysit.so:system/lib/libbabysit.so \
@@ -212,6 +214,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/lib/libipanat.so:system/lib/libipanat.so \
     vendor/motorola/athene/proprietary/lib/libjscore.so:system/lib/libjscore.so \
     vendor/motorola/athene/proprietary/lib/libjustshoot.so:system/lib/libjustshoot.so \
+    vendor/motorola/athene/proprietary/lib/libldacBT_enc.so:system/lib/libldacBT_enc.so \
     vendor/motorola/athene/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/motorola/athene/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/motorola/athene/proprietary/lib/libmbs.so:system/lib/libmbs.so \
@@ -258,6 +261,9 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/lib/libwbxmlparser.so:system/lib/libwbxmlparser.so \
     vendor/motorola/athene/proprietary/lib/libwifi-hal-qcom.so:system/lib/libwifi-hal-qcom.so \
     vendor/motorola/athene/proprietary/lib/vendor.qti.hardware.fm@1.0.so:system/lib/vendor.qti.hardware.fm@1.0.so \
+    vendor/motorola/athene/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
+    vendor/motorola/athene/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
+    vendor/motorola/athene/proprietary/lib64/libldacBT_enc.so:system/lib64/libldacBT_enc.so \
     vendor/motorola/athene/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
     vendor/motorola/athene/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
     vendor/motorola/athene/proprietary/lib64/libperipheral_client.so:system/lib64/libperipheral_client.so \
