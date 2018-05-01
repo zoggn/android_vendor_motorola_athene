@@ -1,4 +1,5 @@
 # Copyright (C) 2016 The CyanogenMod Project
+#           (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,10 +25,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/bin/cnss_diag:system/bin/cnss_diag \
     vendor/motorola/athene/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
     vendor/motorola/athene/proprietary/bin/dun-server:system/bin/dun-server \
-    vendor/motorola/athene/proprietary/bin/gatekeeperd:system/bin/gatekeeperd \
     vendor/motorola/athene/proprietary/bin/fingerprintd:system/bin/fingerprintd \
     vendor/motorola/athene/proprietary/bin/ftmdaemon:system/bin/ftmdaemon \
     vendor/motorola/athene/proprietary/bin/ftmipcd:system/bin/ftmipcd \
+    vendor/motorola/athene/proprietary/bin/gatekeeperd:system/bin/gatekeeperd \
     vendor/motorola/athene/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon \
     vendor/motorola/athene/proprietary/bin/hal_proxy_daemon:system/bin/hal_proxy_daemon \
     vendor/motorola/athene/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
@@ -148,12 +149,14 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/etc/firmware/venus-v1.mdt:system/etc/firmware/venus-v1.mdt \
     vendor/motorola/athene/proprietary/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     vendor/motorola/athene/proprietary/etc/motorola/ecc_db/qcril_mot_ecc_common.db:system/etc/motorola/ecc_db/qcril_mot_ecc_common.db \
+    vendor/motorola/athene/proprietary/etc/permissions/com.qti.location.sdk.xml:system/etc/permissions/com.qti.location.sdk.xml \
     vendor/motorola/athene/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
-    vendor/motorola/athene/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
     vendor/motorola/athene/proprietary/etc/permissions/com.qualcomm.location.vzw_library.xml:system/etc/permissions/com.qualcomm.location.vzw_library.xml \
     vendor/motorola/athene/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
-    vendor/motorola/athene/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
+    vendor/motorola/athene/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
     vendor/motorola/athene/proprietary/etc/permissions/ims.xml:system/etc/permissions/ims.xml \
+    vendor/motorola/athene/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
+    vendor/motorola/athene/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
     vendor/motorola/athene/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/motorola/athene/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/motorola/athene/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
@@ -161,12 +164,12 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/framework/com.qti.dpmframework.jar:system/framework/com.qti.dpmframework.jar \
     vendor/motorola/athene/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/motorola/athene/proprietary/framework/com.qti.location.sdk.jar:system/framework/com.qti.location.sdk.jar \
-    vendor/motorola/athene/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/motorola/athene/proprietary/framework/com.qualcomm.location.vzw_library.jar:system/framework/com.qualcomm.location.vzw_library.jar \
     vendor/motorola/athene/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
     vendor/motorola/athene/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/motorola/athene/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/motorola/athene/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
+    vendor/motorola/athene/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/motorola/athene/proprietary/framework/qcom.fmradio.jar:system/framework/qcom.fmradio.jar \
     vendor/motorola/athene/proprietary/framework/qmapbridge.jar:system/framework/qmapbridge.jar \
     vendor/motorola/athene/proprietary/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar \
@@ -177,10 +180,21 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/lib/hw/fingerprint.msm8952.so:system/vendor/lib/hw/fingerprint.vendor.msm8952.so \
     vendor/motorola/athene/proprietary/lib/hw/sensorhub.msm8952.so:system/lib/hw/sensorhub.msm8952.so \
     vendor/motorola/athene/proprietary/lib/hw/sensors.msm8952.so:system/lib/hw/sensors.msm8952.so \
+    vendor/motorola/athene/proprietary/lib/soundfx/libaudiopreprocessing.so:system/lib/soundfx/libaudiopreprocessing.so \
+    vendor/motorola/athene/proprietary/lib/soundfx/libbundlewrapper.so:system/lib/soundfx/libbundlewrapper.so \
+    vendor/motorola/athene/proprietary/lib/soundfx/libdownmix.so:system/lib/soundfx/libdownmix.so \
+    vendor/motorola/athene/proprietary/lib/soundfx/libeffectproxy.so:system/lib/soundfx/libeffectproxy.so \
+    vendor/motorola/athene/proprietary/lib/soundfx/libldnhncr.so:system/lib/soundfx/libldnhncr.so \
+    vendor/motorola/athene/proprietary/lib/soundfx/libmmieffectswrapper.so:system/lib/soundfx/libmmieffectswrapper.so \
+    vendor/motorola/athene/proprietary/lib/soundfx/libqcomvisualizer.so:system/lib/soundfx/libqcomvisualizer.so \
+    vendor/motorola/athene/proprietary/lib/soundfx/libqcomvoiceprocessing.so:system/lib/soundfx/libqcomvoiceprocessing.so \
+    vendor/motorola/athene/proprietary/lib/soundfx/libreverbwrapper.so:system/lib/soundfx/libreverbwrapper.so \
+    vendor/motorola/athene/proprietary/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
     vendor/motorola/athene/proprietary/lib/android.hardware.biometrics.fingerprint@2.1.so:system/lib/android.hardware.biometrics.fingerprint@2.1.so \
     vendor/motorola/athene/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
     vendor/motorola/athene/proprietary/lib/libadvalgcore.so:system/lib/libadvalgcore.so \
     vendor/motorola/athene/proprietary/lib/libbabysit.so:system/lib/libbabysit.so \
+    vendor/motorola/athene/proprietary/lib/libbson.so:system/lib/libbson.so \
     vendor/motorola/athene/proprietary/lib/libbt-aptX-ARM-4.2.2.so:system/lib/libbt-aptX-ARM-4.2.2.so \
     vendor/motorola/athene/proprietary/lib/libcamerabgproc-jni.so:system/lib/libcamerabgproc-jni.so \
     vendor/motorola/athene/proprietary/lib/libcamerabgprocservice.so:system/lib/libcamerabgprocservice.so \
@@ -199,9 +213,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/lib/libjustshoot.so:system/lib/libjustshoot.so \
     vendor/motorola/athene/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/motorola/athene/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    vendor/motorola/athene/proprietary/lib/libbson.so:system/lib/libbson.so \
-    vendor/motorola/athene/proprietary/vendor/lib/libsui.so:system/vendor/lib/libsui.so \
-    vendor/motorola/athene/proprietary/vendor/lib/libsu.so:system/vendor/lib/libsu.so \
     vendor/motorola/athene/proprietary/lib/libmbs.so:system/lib/libmbs.so \
     vendor/motorola/athene/proprietary/lib/libmdmcutback.so:system/lib/libmdmcutback.so \
     vendor/motorola/athene/proprietary/lib/libminui.so:system/lib/libminui.so \
@@ -230,8 +241,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/lib/libqcomfm_jni.so:system/lib/libqcomfm_jni.so \
     vendor/motorola/athene/proprietary/lib/libqmimotext.so:system/lib/libqmimotext.so \
     vendor/motorola/athene/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
+    vendor/motorola/athene/proprietary/lib/libqsap_sdk.so:system/lib/libqsap_sdk.so \
     vendor/motorola/athene/proprietary/lib/libqti_performance.so:system/lib/libqti_performance.so \
     vendor/motorola/athene/proprietary/lib/librilqmiservices.so:system/lib/librilqmiservices.so \
+    vendor/motorola/athene/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
     vendor/motorola/athene/proprietary/lib/libsensorhubservice_jni.so:system/lib/libsensorhubservice_jni.so \
     vendor/motorola/athene/proprietary/lib/libsensorhub.so:system/lib/libsensorhub.so \
     vendor/motorola/athene/proprietary/lib/libslowmotionconverter.so:system/lib/libslowmotionconverter.so \
@@ -239,22 +252,17 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/lib/libtinyxml.so:system/lib/libtinyxml.so \
     vendor/motorola/athene/proprietary/lib/libtpa_core.so:system/lib/libtpa_core.so \
     vendor/motorola/athene/proprietary/lib/libtpa.so:system/lib/libtpa.so \
-    vendor/motorola/athene/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
+    vendor/motorola/athene/proprietary/lib/libuiblur.so:system/lib/libuiblur.so \
     vendor/motorola/athene/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
     vendor/motorola/athene/proprietary/lib/libwbxmlparser.so:system/lib/libwbxmlparser.so \
     vendor/motorola/athene/proprietary/lib/libwifi-hal-qcom.so:system/lib/libwifi-hal-qcom.so \
-    vendor/motorola/athene/proprietary/lib/soundfx/libaudiopreprocessing.so:system/lib/soundfx/libaudiopreprocessing.so \
-    vendor/motorola/athene/proprietary/lib/soundfx/libbundlewrapper.so:system/lib/soundfx/libbundlewrapper.so \
-    vendor/motorola/athene/proprietary/lib/soundfx/libdownmix.so:system/lib/soundfx/libdownmix.so \
-    vendor/motorola/athene/proprietary/lib/soundfx/libeffectproxy.so:system/lib/soundfx/libeffectproxy.so \
-    vendor/motorola/athene/proprietary/lib/soundfx/libldnhncr.so:system/lib/soundfx/libldnhncr.so \
-    vendor/motorola/athene/proprietary/lib/soundfx/libmmieffectswrapper.so:system/lib/soundfx/libmmieffectswrapper.so \
-    vendor/motorola/athene/proprietary/lib/soundfx/libqcomvisualizer.so:system/lib/soundfx/libqcomvisualizer.so \
-    vendor/motorola/athene/proprietary/lib/soundfx/libqcomvoiceprocessing.so:system/lib/soundfx/libqcomvoiceprocessing.so \
-    vendor/motorola/athene/proprietary/lib/soundfx/libreverbwrapper.so:system/lib/soundfx/libreverbwrapper.so \
-    vendor/motorola/athene/proprietary/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
-    vendor/motorola/athene/proprietary/lib/libqsap_sdk.so:system/lib/libqsap_sdk.so \
     vendor/motorola/athene/proprietary/lib/vendor.qti.hardware.fm@1.0.so:system/lib/vendor.qti.hardware.fm@1.0.so \
+    vendor/motorola/athene/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
+    vendor/motorola/athene/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
+    vendor/motorola/athene/proprietary/lib64/libperipheral_client.so:system/lib64/libperipheral_client.so \
+    vendor/motorola/athene/proprietary/lib64/vendor.qti.hardware.fm@1.0.so:system/lib64/vendor.qti.hardware.fm@1.0.so \
+    vendor/motorola/athene/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:system/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
+    vendor/motorola/athene/proprietary/vendor/bin/hw/rild:system/vendor/bin/hw/rild \
     vendor/motorola/athene/proprietary/vendor/bin/audioflacapp:system/vendor/bin/audioflacapp \
     vendor/motorola/athene/proprietary/vendor/bin/mm-pp-daemon:system/vendor/bin/mm-pp-daemon \
     vendor/motorola/athene/proprietary/vendor/bin/perfd:system/vendor/bin/perfd \
@@ -263,8 +271,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/motorola/athene/proprietary/vendor/bin/seemp_healthd:system/vendor/bin/seemp_healthd \
     vendor/motorola/athene/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
-    vendor/motorola/athene/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:system/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
-    vendor/motorola/athene/proprietary/vendor/bin/hw/rild:system/vendor/bin/hw/rild \
     vendor/motorola/athene/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/motorola/athene/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/motorola/athene/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -276,6 +282,18 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/lib/hw/gatekeeper.msm8952.so:system/vendor/lib/hw/gatekeeper.msm8952.so \
     vendor/motorola/athene/proprietary/vendor/lib/hw/keystore.msm8952.so:system/vendor/lib/hw/keystore.msm8952.so \
     vendor/motorola/athene/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
+    vendor/motorola/athene/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
+    vendor/motorola/athene/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
+    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
+    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
+    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
+    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
+    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so:system/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so \
+    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libpanorama_skel.so:system/vendor/lib/rfsa/adsp/libpanorama_skel.so \
+    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:system/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
+    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:system/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
+    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:system/vendor/lib/rfsa/adsp/libscveT2T_skel.so \
+    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libscveTextReco_skel.so:system/vendor/lib/rfsa/adsp/libscveTextReco_skel.so \
     vendor/motorola/athene/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
     vendor/motorola/athene/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/motorola/athene/proprietary/vendor/lib/libacdbmapper.so:system/vendor/lib/libacdbmapper.so \
@@ -983,8 +1001,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     vendor/motorola/athene/proprietary/vendor/lib/libStDrvInt.so:system/vendor/lib/libStDrvInt.so \
     vendor/motorola/athene/proprietary/vendor/lib/libstlport_sta.so:system/vendor/lib/libstlport_sta.so \
+    vendor/motorola/athene/proprietary/vendor/lib/libsu.so:system/vendor/lib/libsu.so \
     vendor/motorola/athene/proprietary/vendor/lib/libsubsystem_control.so:system/vendor/lib/libsubsystem_control.so \
     vendor/motorola/athene/proprietary/vendor/lib/libSubSystemShutdown.so:system/vendor/lib/libSubSystemShutdown.so \
+    vendor/motorola/athene/proprietary/vendor/lib/libsui.so:system/vendor/lib/libsui.so \
     vendor/motorola/athene/proprietary/vendor/lib/libsurround_3mic_proc.so:system/vendor/lib/libsurround_3mic_proc.so \
     vendor/motorola/athene/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/motorola/athene/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
@@ -996,7 +1016,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/lib/libubifocus.so:system/vendor/lib/libubifocus.so \
     vendor/motorola/athene/proprietary/vendor/lib/libuiblur.so:system/vendor/lib/libuiblur.so \
     vendor/motorola/athene/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
-    vendor/motorola/athene/proprietary/lib/libuiblur.so:system/lib/libuiblur.so \
     vendor/motorola/athene/proprietary/vendor/lib/libvendorconn.so:system/vendor/lib/libvendorconn.so \
     vendor/motorola/athene/proprietary/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
     vendor/motorola/athene/proprietary/vendor/lib/libwfdcommonutils.so:system/vendor/lib/libwfdcommonutils.so \
@@ -1008,26 +1027,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
     vendor/motorola/athene/proprietary/vendor/lib/libxt_native.so:system/vendor/lib/libxt_native.so \
     vendor/motorola/athene/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
-    vendor/motorola/athene/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
-    vendor/motorola/athene/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:system/vendor/lib/rfsa/adsp/libapps_mem_heap.so \
-    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libdspCV_skel.so:system/vendor/lib/rfsa/adsp/libdspCV_skel.so \
-    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so:system/vendor/lib/rfsa/adsp/libfastcvadsp_skel.so \
-    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/vendor/lib/rfsa/adsp/libfastcvadsp.so \
-    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so:system/vendor/lib/rfsa/adsp/libobjectMattingApp_skel.so \
-    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libpanorama_skel.so:system/vendor/lib/rfsa/adsp/libpanorama_skel.so \
-    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so:system/vendor/lib/rfsa/adsp/libscveBlobDescriptor_skel.so \
-    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:system/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
-    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:system/vendor/lib/rfsa/adsp/libscveT2T_skel.so \
-    vendor/motorola/athene/proprietary/vendor/lib/rfsa/adsp/libscveTextReco_skel.so:system/vendor/lib/rfsa/adsp/libscveTextReco_skel.so \
     vendor/motorola/athene/proprietary/vendor/lib/sensor_calibrate.so:system/vendor/lib/sensor_calibrate.so \
     vendor/motorola/athene/proprietary/vendor/lib/sensors.ssc.so:system/vendor/lib/sensors.ssc.so \
     vendor/motorola/athene/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so:system/vendor/lib/vendor.qti.hardware.fm@1.0_vendor.so \
     vendor/motorola/athene/proprietary/vendor/qcril.db:system/vendor/qcril.db \
-    vendor/motorola/athene/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
-    vendor/motorola/athene/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
-    vendor/motorola/athene/proprietary/lib64/libperipheral_client.so:system/lib64/libperipheral_client.so \
-    vendor/motorola/athene/proprietary/lib64/vendor.qti.hardware.fm@1.0.so:system/lib64/vendor.qti.hardware.fm@1.0.so \
     vendor/motorola/athene/proprietary/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so \
     vendor/motorola/athene/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
     vendor/motorola/athene/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
@@ -1130,21 +1133,21 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so
 
 PRODUCT_PACKAGES += \
-    libtime_genoff \
-    TimeService \
-    CNEService \
-    qcrilmsgtunnel \
-    ims \
-    colorservice \
-    imssettings \
-    imscmlibrary \
-    qcnvitems \
-    qcrilhook \
+    atfwd \
     CarrierServices \
+    CNEService \
+    colorservice \
     ConnMO \
     DCMO \
     DiagMon \
-    DMService \
-    SprintDM \
     DMConfigUpdateLight \
-    atfwd
+    DMService \
+    ims \
+    imscmlibrary \
+    imssettings \
+    libtime_genoff \
+    qcnvitems \
+    qcrilhook \
+    qcrilmsgtunnel \
+    SprintDM \
+    TimeService
