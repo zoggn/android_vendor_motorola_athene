@@ -205,8 +205,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/lib/libdhcpcd.so:system/lib/libdhcpcd.so \
     vendor/motorola/athene/proprietary/lib/libdmengine.so:system/lib/libdmengine.so \
     vendor/motorola/athene/proprietary/lib/libdmjavaplugin.so:system/lib/libdmjavaplugin.so \
-    vendor/motorola/athene/proprietary/lib/libdtvhal.so:system/lib/libdtvhal.so \
-    vendor/motorola/athene/proprietary/lib/libdtvtuner.so:system/lib/libdtvtuner.so \
     vendor/motorola/athene/proprietary/lib/libGLESv3.so:system/lib/libGLESv3.so \
     vendor/motorola/athene/proprietary/lib/libipanat.so:system/lib/libipanat.so \
     vendor/motorola/athene/proprietary/lib/libjscore.so:system/lib/libjscore.so \
@@ -1164,6 +1162,19 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/lib64/vendor.qti.gnss@1.0_vendor.so:system/vendor/lib64/vendor.qti.gnss@1.0_vendor.so \
     vendor/motorola/athene/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so:system/vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so
 
+# DTV
+PRODUCT_COPY_FILES += \
+    vendor/motorola/athene/proprietary/vendor/lib/libdtvtuner.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdtvtuner.so \
+    vendor/motorola/athene/proprietary/vendor/lib64/libdtvtuner.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdtvtuner.so \
+    vendor/motorola/athene/proprietary/vendor/bin/hw/motorola.hardware.tv@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.tv@1.0-service \
+    vendor/motorola/athene/proprietary/vendor/etc/init/motorola.hardware.tv@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.tv@1.0-service.rc \
+    vendor/motorola/athene/proprietary/vendor/lib/hw/motorola.hardware.tv@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/motorola.hardware.tv@1.0-impl.so \
+    vendor/motorola/athene/proprietary/vendor/lib/motorola.hardware.tv@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.tv@1.0.so \
+    vendor/motorola/athene/proprietary/vendor/lib/motorola.hardware.tv@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/motorola.hardware.tv@1.0_vendor.so \
+    vendor/motorola/athene/proprietary/vendor/lib64/hw/motorola.hardware.tv@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/motorola.hardware.tv@1.0-impl.so \
+    vendor/motorola/athene/proprietary/vendor/lib64/motorola.hardware.tv@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.tv@1.0.so \
+    vendor/motorola/athene/proprietary/vendor/lib64/motorola.hardware.tv@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/motorola.hardware.tv@1.0_vendor.so
+
 PRODUCT_PACKAGES += \
     atfwd \
     CarrierServices \
@@ -1174,6 +1185,8 @@ PRODUCT_PACKAGES += \
     DiagMon \
     DMConfigUpdateLight \
     DMService \
+    DTVService \
+    DTVPlayer \
     libloc_api_v02 \
     ims \
     imscmlibrary \
