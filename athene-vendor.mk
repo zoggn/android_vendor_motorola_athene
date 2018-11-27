@@ -21,15 +21,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/bin/btnvtool:system/bin/btnvtool \
     vendor/motorola/athene/proprietary/vendor/bin/charge_only_mode:$(TARGET_COPY_OUT_VENDOR)/bin/charge_only_mode \
     vendor/motorola/athene/proprietary/bin/cnd:system/bin/cnd \
-    vendor/motorola/athene/proprietary/bin/cnss_diag:system/bin/cnss_diag \
     vendor/motorola/athene/proprietary/bin/cnss-daemon:system/bin/cnss-daemon \
-    vendor/motorola/athene/proprietary/bin/dun-server:system/bin/dun-server \
     vendor/motorola/athene/proprietary/bin/fingerprintd:system/bin/fingerprintd \
     vendor/motorola/athene/proprietary/bin/ftmdaemon:system/bin/ftmdaemon \
-    vendor/motorola/athene/proprietary/bin/ftmipcd:system/bin/ftmipcd \
     vendor/motorola/athene/proprietary/bin/gatekeeperd:system/bin/gatekeeperd \
-    vendor/motorola/athene/proprietary/bin/gpsone_daemon:system/bin/gpsone_daemon \
-    vendor/motorola/athene/proprietary/bin/hal_proxy_daemon:system/bin/hal_proxy_daemon \
     vendor/motorola/athene/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/motorola/athene/proprietary/bin/imscmservice:system/bin/imscmservice \
     vendor/motorola/athene/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
@@ -46,7 +41,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/bin/qmi_motext_hook:system/bin/qmi_motext_hook \
     vendor/motorola/athene/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/motorola/athene/proprietary/bin/qseecomd:system/bin/qseecomd \
-    vendor/motorola/athene/proprietary/bin/radish:system/bin/radish \
     vendor/motorola/athene/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/motorola/athene/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/motorola/athene/proprietary/bin/sensorservice:system/bin/sensorservice \
