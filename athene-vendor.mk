@@ -972,8 +972,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/motorola/athene/proprietary/vendor/lib/libqti-at.so:system/vendor/lib/libqti-at.so \
     vendor/motorola/athene/proprietary/vendor/lib/libqti-gt.so:system/vendor/lib/libqti-gt.so \
-    vendor/motorola/athene/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
-    vendor/motorola/athene/proprietary/vendor/lib/libqti_performance.so:system/vendor/lib/libqti_performance.so \
     vendor/motorola/athene/proprietary/vendor/lib/libQtiTether.so:system/vendor/lib/libQtiTether.so \
     vendor/motorola/athene/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/motorola/athene/proprietary/vendor/lib/libril-qc-ltedirectdisc.so:system/vendor/lib/libril-qc-ltedirectdisc.so \
@@ -1196,6 +1194,16 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/vendor/bin/hw/motorola.hardware.audio@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/motorola.hardware.audio@2.0-service \
     vendor/motorola/athene/proprietary/vendor/etc/init/motorola.hardware.audio@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/motorola.hardware.audio@2.0-service.rc
 
+# QTI Perf
+PRODUCT_COPY_FILES += \
+    vendor/motorola/athene/proprietary/vendor/bin/hw/vendor.qti.hardware.perf@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.perf@1.0-service \
+    vendor/motorola/athene/proprietary/vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf@1.0-service.rc \
+    vendor/motorola/athene/proprietary/vendor/lib/vendor.qti.hardware.perf@1.0_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.perf@1.0_vendor.so \
+    vendor/motorola/athene/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
+    vendor/motorola/athene/proprietary/vendor/lib/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfgluelayer.so \
+    vendor/motorola/athene/proprietary/vendor/lib/libqti-perfd.so:$(TARGET_COPY_OUT_VENDOR)/lib/ibqti-perfd.so \
+    vendor/motorola/athene/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so
+    
 # Packages
 PRODUCT_PACKAGES += \
     atfwd \
