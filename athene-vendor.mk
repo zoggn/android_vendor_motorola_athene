@@ -195,7 +195,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/athene/proprietary/lib/libaptX_encoder.so:system/lib/libaptX_encoder.so \
     vendor/motorola/athene/proprietary/lib/libaptXHD_encoder.so:system/lib/libaptXHD_encoder.so \
     vendor/motorola/athene/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
-    vendor/motorola/athene/proprietary/lib/libadropbox.so:system/lib/libadropbox.so \
     vendor/motorola/athene/proprietary/lib/libadvalgcore.so:system/lib/libadvalgcore.so \
     vendor/motorola/athene/proprietary/lib/libbabysit.so:system/lib/libbabysit.so \
     vendor/motorola/athene/proprietary/lib/libbson.so:system/lib/libbson.so \
